@@ -1,0 +1,56 @@
+page-login {
+  ion-header {
+    .toolbar {
+      position: absolute;
+      .button {
+        color: map-get($colors, primary);
+      }
+      .toolbar-background {
+        background: transparent;
+      }
+      .toolbar-title {
+        color: map-get($colors, primary);
+      }
+    }
+  }
+  ion-footer {
+    .button {
+      color: map-get($colors, primary);
+    }
+    .toolbar-background {
+      background: transparent;
+    }
+    .toolbar-title {
+      color: map-get($colors, primary);
+    }
+  }
+  .-text-white {
+    color: map-get($colors, primary);
+  }
+  ion-slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+    ion-icon {
+      // zoom: 3.0;
+
+      &.-small {
+        zoom: 1;
+      }
+    }
+    i {
+      zoom: 3;
+      &.-small {
+        zoom: 2;
+      }
+    }
+    h3 {
+      width: 100%;
+      display: block;
+    }
+  }
+}

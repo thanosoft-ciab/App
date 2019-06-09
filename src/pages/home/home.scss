@@ -1,0 +1,32 @@
+page-home {
+  .scroll-zoom-wrapper {
+    white-space: nowrap;
+  }
+  .header {
+    z-index: 999999;
+    background-color: map-get($colors, primary);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    width: 100%;
+  }
+  ion-card {
+    width: 120px !important;
+    height: 120px;
+    display: inline-block;
+  }
+  .card {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px;
+  }
+  ion-scroll {
+    min-height: 130px;
+
+    .scroll-content {
+      padding: 0px !important;
+    }
+  }
+}

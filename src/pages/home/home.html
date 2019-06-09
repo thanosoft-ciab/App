@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="header" padding>
+    <h3>Seu saldo</h3>
+    <h2>R$ 30,00 </h2>
+  </div>
+  <p style="margin-left:10px;color:#898989">Alimente seus dados</p>
+  <ion-scroll scrollX="true" direction="x" class="padding" padding>
+    <ion-card>
+      <ion-card-content text-center>
+        <ion-icon name="ios-person-outline" class="iconLarge" color="third"></ion-icon>
+        <h2>Pessoal</h2>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content text-center>
+        <ion-icon name="ios-finger-print-outline" class="iconLarge" color="third"></ion-icon>
+        <h2>Documentos</h2>
+      </ion-card-content>
+    </ion-card>
+    <ion-card (click)="companies()">
+      <ion-card-content text-center>
+        <ion-icon name="ios-cash-outline" class="iconLarge" color="third"></ion-icon>
+        <h2>Empresas</h2>
+      </ion-card-content>
+    </ion-card>
+  </ion-scroll>
+  <ion-item-group>
+    <ion-item-divider>
+      Atividades
+    </ion-item-divider>
+    <ion-item *ngFor="let item of data">
+      <ion-icon name="{{item.icon}}" color="{{item.color}}" item-start></ion-icon>
+      {{item.label}}
+      <p>{{item.value}}</p>
+      <p item-end>{{item.date}}</p>
+    </ion-item>
+  </ion-item-group>
+</ion-content>
